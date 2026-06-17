@@ -8,6 +8,12 @@ O objetivo deste trabalho é implementar um jogo de adivinhação utilizando **c
 
 Durante a execução, os processos se comunicam através de Pipes para enviar e receber informações relacionadas às tentativas de adivinhação, demonstrando na prática o funcionamento da comunicação entre processos em linguagem C.
 
+## Estrutura do Projeto
+
+src/      -> código-fonte
+docs/     -> documentação e relatório
+exemplos/ -> saídas de execução
+
 ## Tecnologias Utilizadas
 
 * Linguagem C
