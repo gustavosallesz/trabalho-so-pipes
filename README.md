@@ -14,6 +14,20 @@ src/      -> código-fonte
 docs/     -> documentação e relatório
 exemplos/ -> saídas de execução
 
+## Como Compilar e Executar
+
+A partir da raiz do projeto:
+
+```bash
+# Compilar
+gcc -o adivinhacao src/adivinhacao.c
+
+# Executar
+./adivinhacao
+```
+
+Repita os dois comandos sempre que alterar `src/adivinhacao.c`.
+
 ## Tecnologias Utilizadas
 
 * Linguagem C
