@@ -10,9 +10,9 @@ Durante a execução, os processos se comunicam através de Pipes para enviar e 
 
 ## Estrutura do Projeto
 
-src/      -> código-fonte
-docs/     -> documentação e relatório
-exemplos/ -> saídas de execução
+* src/      -> código-fonte
+* docs/     -> documentação e relatório
+* exemplos/ -> saídas de execução
 
 ## Como Compilar e Executar
 
