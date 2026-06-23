@@ -1,0 +1,4 @@
+# binários compilados
+/adivinhacao
+src/adivinhacao-teste2
+*.o
