@@ -107,7 +107,7 @@ A cada rodada o filho **descarta metade do intervalo restante**:
 
 Isso é exatamente a definição de **busca binária**: a cada passo o espaço de
 busca é cortado pela metade, então o número de tentativas para um intervalo de
-100 valores é, no máximo, `log2(100) ≈ 7`.
+100 valores é, no máximo, `log2(100) ≈ 7`. "divide et impera" - Júlio César =)
 
 ### Por que o primeiro palpite é sempre 50?
 
@@ -127,16 +127,3 @@ qual número o pai sorteou. A aleatoriedade do jogo está inteiramente do lado
 do pai (`secreto = rand() % ... `); o filho é totalmente determinístico dado
 o protocolo de respostas.
 
-## 6. Resumo para apresentar aos colegas
-
-- **IPC usado**: Pipes (`pipe()`), unidirecionais, por isso são dois (`pipe1`
-  e `pipe2`).
-- **Concorrência**: `fork()` cria 2 processos independentes (memória
-  separada); a única forma de eles "conversarem" é pelo pipe.
-- **Sincronização**: implícita pelo próprio pipe — `read()` bloqueia o
-  processo até ter dado pra ler, então pai e filho ficam naturalmente
-  alternando turnos (filho chuta → pai responde → filho chuta...).
-- **Algoritmo do filho**: busca binária sobre o intervalo `[1, 100]`.
-- **Por que sempre chuta 50 primeiro**: é o meio do intervalo inicial fixo,
-  sem nenhuma informação prévia — comportamento esperado e correto da busca
-  binária.
